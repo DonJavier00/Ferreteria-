@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image:url(Imagenes/ferre\ borrosa.jpg);
+  background-size: cover; /*completa imagen*/
+  background-position: center;
+  background-attachment: fixed;
+  
+
+}
+
+.registro-administrador {
+  width: 35%;
+  height: 50%;
+  background:#ffffff;
+  padding: 50px;
+  margin: auto;
+  border-radius: 4px;
+  color: #000000;
+  box-shadow: 7px 13px 37px #ffb703;
+  align-items: center;
+  text-align: center;
+
+}
+.registro-administrador h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+
+}
+
+.registro-administrador select{
+  border-radius: 10px;
+  display:relative;
+  height: 10%;
+  width: 60%;
+  font-size: 18px;
+  margin: 10px;
+  color:#000000;
+  background-color: #ffffff;
+  border: 3px solid #ffb703;
+}
+
+.estado{
+  display: flex;
+  }
+.estado h3{
+    position: relative;
+    top: 10px;
+  }
+
+.documento{
+    display: flex;
+    }
+.documento h3{
+      position: relative;
+      top: 10px;
+    }
+
+.controls {
+  width: 100%;
+  background: #f8f8f6 ;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-top: 2px;
+  border: 3px solid #ffb703;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(2, 2, 2);
+
+}
+
+.registro-administrador p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.registro-administrador a {
+  color: white;
+  text-decoration: none;
+}
+
+.registro-administrador a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.registro-administrador .botons {
+  border-radius: 10px;
+  width: 40%;
+  background:#ffb703;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  border:1px solid #ffb703;
+  margin: 13px 0;
+  font-size: 16px;
+}
+.registro-administrador .botons:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ffb703;
+}

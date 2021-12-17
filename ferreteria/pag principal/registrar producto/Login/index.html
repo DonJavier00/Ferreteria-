@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <title>restablecer contraseña</title>
+    <title>Login</title>
   </head>
   <body>
     <main class="login-design">
@@ -28,33 +28,36 @@
          
             <form action="#" class="login-form">
               <img src="assets/trabajador.png" alt="" />
-              <h1>Restablecer contraseña</h1>
-              
+              <h1>Inicio de Sesión</h1>
+            
+            <select class="seleccionar" id="">
+              <div class="op">
+              <option disabled selected>Seleccione su rol </option>
+              <option value="">Administrador</option>
+              <option value="">Empleado</option>
+            </div>
+            </select>
+            
+           
+
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="email" name="email" id="email" required />
+                <span class="input-label">Correo Electrónico</span>
+                <i class="fas fa-envelope"></i>
+              </label>
+            </div>
             <div class="input-group">
               <label class="input-fill">
                 <input type="password" name="password" id="password" required />
-                <span class="input-label">Nueva contraseña</span>
+                <span class="input-label">Contraseña</span>
                 <i class="fas fa-lock"></i>
               </label>
-              
             </div>
-              <div class="input-group">
-              <label class="input-fill">
-                <input type="password" name="password" id="password" required />
-                <span class="input-label">Confirmar nueva contraseña</span>
-                <i class="fas fa-lock"></i>
-              </label>
-            
-            </div>
+        
  
             
             <input type="submit" value="Iniciar Sesión" class="btn-login" />
-            <div class="correr">
-              <p>Ya tienes una cuenta?  </p>
-              <div class="iniciar-sesion">
-                <a href="index.html"><u>Iniciar Sesión</u></a>
-              </div>
-              
           </form>
         </div>
       </div>

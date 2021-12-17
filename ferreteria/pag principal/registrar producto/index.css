@@ -226,11 +226,12 @@ header{
     text-align: center;
     margin: 48px 100px;
 }
+
 .btn-close{
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 95%;
+    right: -20px;
     top: -20px;
     padding: 20px;
     background-color: black;
@@ -239,8 +240,6 @@ header{
     line-height: 10px;
 
 }
-    
- 
 
 .contenido:target{
     background: rgba(0, 0, 0, 0.8);
@@ -664,129 +663,16 @@ opacity: 0;
          top: 135px;
      }
      
-/* registro de producto si existe*/ 
+/* registro de producto si existe*/
 
-
-
-
-
-
-
-.btn-close_registro_compra{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: blanchedalmond;
-    border-radius: 50%;
-    line-height: 10px;
-  margin-left: 87%;
-  margin-top: -2%;
-
-}
-
-#contenido_general_registrar{
-    background-color: #FFF;
-    width: 88%;
-    height: 700px;
-    align-items: center;
-    display:flexbox;
-    border-radius: 20px;
-    border: 2px solid #ffb703;
-    margin-left: 0%;
-    
-    
-}
-.factura_proveedor_registro{
-    width: 100%;
-    max-width: 95%;
-    background-color: #fff; 
-    border: 2px solid #ffb703;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    
-    font-size: 18px;
-    font-weight: bolder; 
-
-}
-.datos_proveedor_formulario{
-    width: 100%;
-    max-width: 95%;
-     max-height: 120px;
-    background-color: #fff; 
-    border: 2px solid #ffb703;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: bolder; 
-    height: 180px;
-    margin-top: 10px;
-}
-
-
-.registrar_compra:target{
+.registro:target{
     background: rgba(0, 0, 0, 0.8);
     top: 0%;
     left: 0%;
     visibility: visible;
     opacity: 1;
 }
-.total_factura_proveedor{
-    width: 25%;
-    height: 10%;
-    border: 2px solid #030303;
-    margin-left: 73%;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-.factura_proveedor_registro .proveedor_factura_numero{
-margin-left: 50%;
-margin-top: -4%;
-}
-
-.datos_proveedor_formulario .tbn_nuevo_proveedor{
-    margin-left:243px;
-}
-.datos_proveedor_formulario .tbn_nuevo_proveedor:hover{
-color: #ffb703;
-}
-.link_buscar_proveedor_registro:hover{
-    color: #ffb703;
-}
-.datos_proveedor_formulario .registro_nombre_proveedor{
-    margin-left: -60%;
-    margin-top: 8px;
-
-}
-.datos_proveedor_formulario .registro_apellido_proveedor{
-    margin-left: 55%;
-    margin-top: -20px;
-
-}
-.datos_proveedor_formulario .registro_telefono_proveedor{
-margin-left: -60%;
-margin-top: 10px;
-}
-.datos_proveedor_formulario .registro_correo_proveedor{
-margin-left: 57%;
-margin-top: -20px;
-}
-#txt_cant_producto_registro {
-    width: 40px;
-    margin-left: 20px;
-}
-#txt_disponibilidad_factura_registro{
-    width: 40px;
-}
-.descripcion_factura_registro_proveedor th{
-    background-color: #ffb703;
-    width: 700px;
-    height: 40px;
-    
-    }
-.registrar_compra{
+.registro{
         width: 100%;
         height: 100%;
         position: fixed;
@@ -794,42 +680,67 @@ margin-top: -20px;
         visibility: hidden;
         opacity:0;
         transition: all 1000ms;
-        overflow: scroll;
     
     }
-    .ventana_registrar_compra{
+    .ventana6{
     
         width: 100%;
-        max-width: 70%;
-        height:auto;
+        max-width: 500px;
+        height: 500px;
         position:relative;
         display: flex;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        margin-top: 10%;
-        
+        background-color: rgb(255, 254, 254);
        
     }
-    .proveedor_factura_fecha{
-        margin-left: -65%;
+    .codigo {
+      width: 190px;
+      height: 32px;
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      left: 75px;
     }
-    
-    .proveedro_factura_numero{
-        border-radius: 10px;
+    .codigo h1{
+        font-size: 25px;
         position: relative;
-        left: 26%;
-    
+        left: 30px;
     }
-    .proveedor_factura_nit{
+    .precio {
+        width: 190px;
+        height: 32px;
+        font-size: 20px;
         position: relative;
-        left: 30%;
+        top: 82px;
+        left: 75px;
+        text-align: center;
+      }
+      .precio h2{
+        font-size: 25px;
+        position: relative;
+        top: 30px;
+        left: 77px;
+    }
+      .cantidad {
+        width: 190px;
+        height: 32px;
+        font-size: 20px;
+        position: relative;
+        top: 30px;
+        left: 75px;
+        text-align: center;
+      }
+      .cantidad h2{
+        font-size: 25px;
+        position: relative;
+        left: 75px;
         top: -20px;
-    }
-   
+      }
       .btnmodificar{
         position:absolute;
-        top: 640px;
+        top: 440px;
         left:320px;     
          background:#ffb703;
          width: 130px;
@@ -848,12 +759,6 @@ margin-top: -20px;
              background: rgba(236, 228, 228, 0.8);  
             
          }
-         .link_Agregar_producto_compra {
-            color: #0fa225;
-            }
-            .link_Agregar_producto_compra:hover {
-                color: #ffb703;
-                }
          
     .buscar {
         background:#ffb703 ;
@@ -861,14 +766,14 @@ margin-top: -20px;
         width: 45px;
         height: 45px;
         position: relative;
-        top: 70px;
+        top: -65px;
         left: 350px;
     }
     .buscar img{
         width: 25px;
         height: 30px;
         position: relative;
-        top: 70px;
+        top: 7px;
         left: 10px;
     }
     .buscar:hover{
@@ -880,7 +785,6 @@ margin-top: -20px;
 margin-bottom: 70px;
 position: relative;
 top: 250px;
-
 
 }
 
@@ -1048,20 +952,6 @@ top: 250px;
 	
 }
 /*--------------------------------- FACTURA CSS-------------------------------------------------------------------------------*/
-.btn-close_factura{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: blanchedalmond;
-    border-radius: 50%;
-    line-height: 10px;
-  margin-left: 87%;
-  margin-top: -2%;
-
-}
-
 #contenido_general{
     background-color: #FFF;
     width: 70%;
@@ -1117,10 +1007,10 @@ margin-top: 10px;
 
 }
 .total_factura{
-    width: 25%;
-    height: 10%;
+    width: 200px;
+    height: 30px;
     border: 2px solid #030303;
-    margin-left: 73%;
+    margin-left: 70%;
     margin-top: 10px;
     border-radius: 10px;
 }
@@ -1128,23 +1018,9 @@ margin-top: 10px;
  
   border-radius: 0px;
 }
-.link_Agregar_producto_venta {
-color: #0fa225;
-}
-.link_Agregar_producto_venta:hover {
-    color: #ffb703;
-    }
-    .link_buscar_producto_factura{
-        margin-left: 10px;
-    }
- .link_buscar_producto_factura:hover{
-     color: #ffb703;
-  
- }
 .empresa_factura_fecha{
     margin-left: -65%;
 }
-
 .empresa_factura_numero{
     border-radius: 10px;
     position: relative;
@@ -1173,9 +1049,8 @@ color: #0fa225;
     font-size: 22px;
 }
 
-#form_nuevo_cliente_venta label{
-margin-left: -100%;
-
+.datos_cliente_formulario label{
+	margin-left:-100%;
 }
 
 .tbl_venta{
@@ -1184,14 +1059,13 @@ margin-left: -100%;
     border-radius: 10px;
     background-color: #fff;
     width: 95%;
-    height: auto;
+    height: 200px;
     border: 2px solid #020201;
     
 }
 .descripcion_factura th{
 background-color: #ffb703;
 width: 700px;
-height: 40px;
 
 }
 #txt_cod_producto{
@@ -1206,8 +1080,8 @@ height: 40px;
 #txt_marca_factura{
     width: 120px;
 }
-#txt_cant_producto{
-    width: 40px;
+#txt_existencia_producto,#txt_cant_producto{
+    width: 50px;
 }
 #txt_precio_total{
     width: 110px;
@@ -1222,14 +1096,6 @@ height: 40px;
 .nuevo_contacto :hover{
     color:#ffb703;
 }
-.link_eliminar{
-margin-left: 40%;
- color: red;
-}
-.link_eliminar:hover{
-    color:#ffb703;
-   }
-   
 
 
 /* datos factura*/
@@ -1263,467 +1129,4 @@ margin-left: 40%;
     transform: translate(-50%,-50%);
      
    
-}
-/*gestionar administrador*/
-.btn-close_gestionar_administrador{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: blanchedalmond;
-    border-radius: 50%;
-    line-height: 10px;
-  margin-left: 18%;
-  margin-top: -7%;
-
-}
-
-.registro-administrador {
-    width: 40%;
-    height:auto;
-    max-height: 130%;
-    background:#ffffff;
-    padding: 50px;
-    margin: auto;
-    border-radius: 4px;
-    color: #000000;
-    box-shadow: 7px 13px 37px #ffb703;
-    align-items: center;
-    text-align: center;
-  
-  }
-  .registro-administrador h1{
-      margin-top: -30px;
-
-  }
-  .registro-administrador h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  
-  }
-  
-  .registro-administrador select{
-  
-    border-radius: 10px;
-    display:relative;
-    height: 10%;
-    width: 60%;
-    font-size: 18px;
-    margin: 10px;
-    color:#000000;
-    background-color: #ffffff;
-    border: 3px solid #ffb703;
-  }
-  
-
-  
-  .documento_administrador{
-      display: flex;
-      margin-top: 20px;
-      }
-      .documento_administrador select{
-        margin-top: 30px;
-        
-      }
-  .documento_administrador h3{
-        position: relative;
-        margin-top: 10%;
-      }
-    .estado{
-        display: flex;
-        margin-top: 28%;
-      
-    }
-    .estado select{
-        margin-top: -1% ;
-        margin-left: 20px;
-    }
-
-    
-  
-  .controls {
-    width: 100%;
-    height: 40px;
-    background: #f8f8f6 ;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 3px solid #ffb703;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: rgb(2, 2, 2);
-  
-  }
-
-  .contoles_datos{
-      margin-top: 50px;
- 
-  }
-  .registro-administrador p {
-    height: 40px;
-    margin-left: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .registro-administrador a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .botons a:hover {
-    color: white;
-    text-decoration: underline;
-  }
- .botons {
-    border-radius: 10px;
-    width: 40%;
-    background:#ffb703;
-    color: #ffffff;
-    border: none;
-    padding: 8px;
-    border:1px solid #ffb703;
-    margin: 13px 0;
-    font-size: 16px;
-  }
-  .botons:hover{
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #ffb703;
-  }
-  
-
-
-.gestionar_administrador:target{
-    background: rgba(0, 0, 0, 0.8);
-    top: 0%;
-    left: 0%;
-    visibility: visible;
-    opacity: 1;
- 
-}
-
-.gestionar_administrador{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    padding: 40px;
-    visibility: hidden;
-    opacity:0;
-    transition: all 1000ms;
-    overflow: scroll;
-  
-}
-.ventana_administrador{
-
-    width: 90%;
-    height: 100%;
-    position:relative;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-     
-   
-}
-.contenido1 p{
-    font-size: 1.5rem;
-    font-weight: 50%;
-}
-.menu{
-    margin-top: 15%;
-}
-
-
-/*--------------------gestionar proveedor----------------------------------------*/
-.btn-close_gestionar_administrador{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: #FFF;
-    border-radius: 50%;
-    line-height: 10px;
-  margin-left: 18%;
-  margin-top: -7%;
-
-}
-.Formulario-Proveedor {
-    width: 40%;
-    height: 150%;
-    background:#fff;
-    padding: 50px;
-    margin: auto;
-    border-radius: 4px;
-    color: #000000;
-    box-shadow: 7px 13px 37px #ffb703;
-    align-items: center;
-    text-align: center;
-  }
- 
-  
-  .Formulario-Proveedor select{
-    border-radius: 10px;
-    display:relative;
-    height: 10%;
-    width: 55%;
-    font-size: 18px;
-    margin: 10px;
-    color:#000000;
-    background-color: #ffffff;
-    border: 3px solid #ffb703;
-  }
-  .Formulario-Proveedor h1{
-      color: #ffb703;
-      position: relative;
-      top: -25px;
-  }
-  .transporte{
-  display: flex;
-  }
-  .transporte h3{
-    position: relative;
-    top: 10px;
-  }
-  
-  .estado_proveedor{
-      margin-top: -2%;
-    display: flex;
-    }
-    .estado_proveedor h3{
-      position: relative;
-      top: 10px;
-      margin-left: 40px;
-    }
-  
-    .documento_proveedor{
-      display: flex;
-      margin-top: 10%;
-      }
-      .documento_proveedor h3{
-       margin-left: 10%;
-       margin-top: 5%;
-      
-      }
-   
-  
-  .Formulario-Proveedor a {
-    color: white;
-    text-decoration: none;
-  }
-
-
- 
-
-.gestionar_proveedor:target{
-    background: rgba(0, 0, 0, 0.8);
-    top: 0%;
-    left: 0%;
-    visibility: visible;
-    opacity: 1;
- 
-}
-
-.gestionar_proveedor{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    padding: 40px;
-    visibility: hidden;
-    opacity:0;
-    transition: all 1000ms;
-    overflow: scroll;
-  
-}
-
-/*--------------------gestionar empleado-----------------------------------*/
-.btn-close_gestionar_empleado{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: #FFF;
-    border-radius: 50%;
-    line-height: 10px;
-  margin-left: 14%;
-  margin-top: -6%;
-
-}
-.Formulario-Empleado {
-    width: 35%;
-    height: 50%;
-    background:#ffffff;
-    padding: 50px;
-    margin: auto;
-    border-radius: 4px;
-    color: #000000;
-    box-shadow: 7px 13px 37px #ffb703;
-    align-items: center;
-    text-align: center;
-  }
-  .Formulario-Empleado h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-  
-  .Formulario-Empleado select{
-    border-radius: 10px;
-    display:relative;
-    height: 30px;
-    width: 200px;
-    font-size: 18px;
-    margin: 10px;
-    color:#000000;
-    background-color: #ffffff;
-    border: 3px solid #ffb703;;
-  }
-  
-  .estado_empleado{
-    display: flex;
-    }
-    .estado_empleado h3{
-      position: relative;
-      top: 10px;
-      margin-left: 40px;
-    }
-  
-    .documento_empleado{
-      display: flex;
-      }
-      .documento_empleado h3{
-        position: relative;
-        top: 10px;
-      }
-  
-  .controls {
-    width: 100%;
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    margin-top: 2px;
-    border: 3px solid #ffb703;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-  
-  }
-  
-  .Formulario-Empleado p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .Formulario-Empleado .botons {
-    border-radius: 10px;
-    width: 40%;
-    background:#ffb703;
-    color: #ffffff;
-    border: none;
-    padding: 8px;
-    border:1px solid #ffb703;
-    margin: 13px 0;
-    font-size: 16px;
-  }
-  .Formulario-Empleado .botons:hover{
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #ffb703;
-  }
-
-
-
-
-
-
-.gestionar_empleado:target{
-    background: rgba(0, 0, 0, 0.8);
-    top: 0%;
-    left: 0%;
-    visibility: visible;
-    opacity: 1;
- 
-}
-
-.gestionar_empleado{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    padding: 40px;
-    visibility: hidden;
-    opacity:0;
-    transition: all 1000ms;
-    overflow: scroll;
-  
-}
-/*--------------------cotizacion factura---------------------------------*/
-.factura .cotizacion{
-    margin-top: -6%;
-    margin-left: -80%;
-}
-.empresa_factura_cotizacion_fecha #fecha{
-    margin-left: 8%;
-    margin-top: -30%;
-}
-.empresa_factura_cotizacion_nit{
-    margin-left: 60%;
-    margin-top: -5%;
-}
-.empresa_factura_cotizacion_numero{
-    margin-left: 70%;
-}
-.empresa_factura_cotizacion_fecha label{
-    margin-left: 5%;
-}
-.factura_cotizacion_empresa {
-    width: 100%;
-    max-width: 95%;
-    background-color: #fff; 
-    border: 2px solid #ffb703;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: -5%;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: bolder; 
-
-}
-/* registrar  cliente*/
-.gestionar_cliente{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    padding: 40px;
-    visibility: hidden;
-    opacity:0;
-    transition: all 1000ms;
-
-}
-.ventana_gestionar_cliente{
-    width: 100%;
-    max-width: 500px;
-    height: 400px;
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: seashell;
-   
-}
-
-
-.gestionar_cliente:target{
-    background: rgba(0, 0, 0, 0.8);
-    top: 0%;
-    left: 0%;
-    visibility: visible;
-    opacity: 1;
-
 }
